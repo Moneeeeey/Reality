@@ -9,7 +9,7 @@ let x;
 var Font;
 var arrow;
 var Welcome = 'Welcome to the Interactieve text by Moneeey';
-var newFont 
+var newFont;
 
 let arrowSize = 40;
 
