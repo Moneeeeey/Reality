@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+@font-face {
+  font-family:'HeptaSlab' ;
+  src: url(../Font/HeptaSlab-SemiBold.ttf);
+}
+
+.NextLogo{ 
+  position: absolute;
+  left: 94.5%;
+  Top: 90%;
+  width: 40px; /* Set the width to 200 pixels */
+}
+
+.NextLogo:hover {
+  width: 50px;
+
+}
+.PrevLogo{
+  position: absolute;
+  left: 2.5%;
+  Top: 90%;
+  width: 40px; /* Set the width to 200 pixels */
+  transform: scaleX(-1);
+}
+.PrevLogo:hover {
+  width: 50px;
+
+}
+h3{
+  position: absolute;
+  left: 91%;
+  Top: 88%;
+  color: yellow; 
+  font-family: 'HeptaSlab';
+  font-size: 20px;
+
+}
+h3:hover{
+  font-size: 22px;
+}
