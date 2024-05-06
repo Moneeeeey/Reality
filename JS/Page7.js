@@ -1,10 +1,10 @@
 let font;
 let points = [];
 let msg = 'LooK';
-let size = 90;
+let size = 120;
 let r = 9;
 let angle = 0;
-
+var Welcome = 'Credit to Patt Vira';
 
 var trail = [];
 var a = 0;
@@ -20,7 +20,7 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   textAlign(CENTER);
-  points = font.textToPoints(msg, width/2, height/2, size, {
+  points = font.textToPoints(msg, width/2, height/1.65, size, {
     sampleFactor: 0.3,
     simplifyThreshold: 0.0,
   });
@@ -30,38 +30,40 @@ function setup() {
   }
   
   noCursor();
-  colorA = color('#97FEED');
-  colorB = color('#97FEED');
+  colorA = color('#ffffff');
+  colorB = color('#ffffff');
   
   x = width+10;
+
 
 }
 
 function draw() {
-  background('#020C2C');
-  
+  background('#0033A0');
+
   
 
-stroke('#97FEED');
-strokeWeight(1);
- text('Change the',width/2, height/4);
- text('way you',width/2, height/2.6);
- text('at things',width/2, height/1.58);
+stroke('#ffffff');
+strokeWeight(2);
+ text('Change ',width/1.9, height/5.5);
+ text('the way',width/2, height/3);
+ text('you',width/2, height/2.2);
+ text('at things!',width/2, height/1.3);
  let targetAngle = atan2(mouseY - height / 2, mouseX - width / 2);
   angle = lerp(angle, targetAngle, 0.05); 
-  
+  strokeWeight(1);
   for (let i = 0; i < points.length; i++) {
     let x = r * cos(angle);
     let y = r * sin(angle);
     line(points[i].x, points[i].y, points[i].x + x, points[i].y + y);
   }
   
-  //fill(255, 100);
+
   textSize(size);
   textFont(font);
-  text(msg, width/2, height/2);
+  text(msg, width/2, height/1.65);
   
-  stroke('#97FEED');
+  stroke('#ffffff');
   strokeWeight(15);
   line(mouseX, mouseY, pmouseX, pmouseY);
   
@@ -85,4 +87,14 @@ strokeWeight(1);
   }
   
   
+
+textSize(10);
+strokeWeight(0.5);
+  let kos = height - 15;
+  text(Welcome,width/2,kos);
+stroke(1);
+ textSize(size);
+
+ //Credit to: creator Patt Vira
+
 }

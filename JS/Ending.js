@@ -1,28 +1,31 @@
 let migae;
 let fontSize = 200;
 let wobblyTexts = [];
-
+let font 
 function preload() {
-  migae = loadFont('../Font/Helvetica-Bold.ttf');
+  font = loadFont('../Font/HeptaSlab-SemiBold.ttf');
+  migae = loadFont('../Font/Helvetica-BoldOblique.ttf');
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   textFont(migae);
   textAlign(CENTER);
-
-  // Automatically add "a" and "b" to the wobblyTexts array
-  addWobblyText("O", width / 5.5 -  fontSize * 0.5, height / 2);
-  addWobblyText("K", width / 4 , height / 2);
-  addWobblyText("?", width / 3.5 + fontSize * 0.5, height / 2);
+  strokeWeight(0);
+  addWobblyText("O", width / 2.4 -  fontSize * 0.5, height / 1.4);
+  addWobblyText("K", width / 2.2 , height / 1.4);
+  addWobblyText("?", width / 2.1 + fontSize * 0.5, height / 1.4);
 }
 
 function draw() {
-  background('#810034');
+  background('#C40C0C');
   textSize(fontSize);
-  textSize(30);
+  textSize(100);
+  textFont(font);
   fill('#FFF600');
-  text('Everything will be ok', 200,200)
+  textLeading(100);
+  text('Everything\n will', width/2,height/4.3)
+  text('be Okay', width/2,height/2.1)
   
   for (let i = 0; i < wobblyTexts.length; i++) {
     wobblyTexts[i].draw();

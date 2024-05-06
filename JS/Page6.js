@@ -5,7 +5,16 @@ var mix = 0;
 let x;
 
 let passTextX;
-let xStart = 10;
+let xStart = 0; 
+
+let font;
+let fontthick;
+let fontreg;
+function preload(){
+  font = loadFont('../Font/monument-extended-2.otf');
+  fontthick = loadFont('../Font/MonumentExtended-Ultrabold.otf');
+  fontreg = loadFont('../Font/MonumentExtended-Regular.otf');
+}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -16,7 +25,6 @@ function setup() {
   colorB = color('#DA1212');
   
   x = width;
-  
   //passTextX = width*5;
   
 }
@@ -39,11 +47,14 @@ function draw() {
   
   textSize(70);
   fill("#DA1212");
+  textFont(fontthick);
   text("Do it or Don't,",width/2,height/3);
+  textFont(fontreg);
   text(+ nf(h, 2) + ":" + nf(m, 2) + ":" + nf(s, 2), width/2, height/2.3);
   text("Will",width/2,height/1.85);
-  text("ANYWAYS!",width/2,height/1.35);
-  
+  textFont(fontthick);
+  text("ANYWAYS!",width/2,height/1.38);
+  textFont(font);
   
   stroke("#DA1212");
  strokeWeight(20);
@@ -69,11 +80,11 @@ function draw() {
   
   
 
-   for (let x = xStart; x < width + 100; x += 170) {
+   for (let x = xStart; x < width + 200; x += 300) {
     fill('#DA1212'); 
-    textStyle(ITALIC); 
+      textStyle(ITALIC); 
     text('pass', x, height/1.6);
-    textStyle(NORMAL); 
+     textStyle(NORMAL); 
   }
 
   xStart--;
