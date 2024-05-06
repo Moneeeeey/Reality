@@ -6,7 +6,7 @@ let x;
 let textDistortion = 0;
 let font;
 let particles = [];
-
+let welcome = 'Thanks to'; 
 function preload(){
   font = loadFont('../Font/MonumentExtended-Regular.otf');
 }
@@ -36,7 +36,6 @@ function setup() {
 function draw() {
   background('#EC3186');
   fill('#ffffff');
-  
   let distToText = dist(mouseX, mouseY, width/2, height/2);
   if (distToText < 100) {
     textDistortion = map(distToText, 0, 100, 0, 50);
@@ -77,6 +76,7 @@ function draw() {
     }
     a += 15;
   }
+
 }
 
 class Particle {
@@ -97,7 +97,7 @@ class Particle {
     
     this.vel.add(this.acc);
     this.pos.add(this.vel);
-    this.acc.mult(0); // Reset acceleration
+    this.acc.mult(0); 
   }
   
   display() {
@@ -105,4 +105,7 @@ class Particle {
     strokeWeight(2);
     point(this.pos.x, this.pos.y);
   }
+
+
+  //Credit to: Generative Pre-trained Transformer
 }
