@@ -39,11 +39,10 @@ function draw() {
   
   textSize(70);
   fill("#DA1212");
-  text("Do it or Don't,",width/2,height/2.5);
-  text(+ nf(h, 2) + ":" + nf(m, 2) + ":" + nf(s, 2), width/2, height/2);
-  text("Will",width/2,height/1.65);
-  //text("Pass",x,height/1.45);
-  text("ANYWAYS!",width/2,height/1.25);
+  text("Do it or Don't,",width/2,height/3);
+  text(+ nf(h, 2) + ":" + nf(m, 2) + ":" + nf(s, 2), width/2, height/2.3);
+  text("Will",width/2,height/1.85);
+  text("ANYWAYS!",width/2,height/1.35);
   
   
   stroke("#DA1212");
@@ -70,9 +69,11 @@ function draw() {
   
   
 
-   for (let x = xStart; x < width; x += 170) {
+   for (let x = xStart; x < width + 100; x += 170) {
     fill('#DA1212'); 
-    text('pass', x, height/1.45);
+    textStyle(ITALIC); 
+    text('pass', x, height/1.6);
+    textStyle(NORMAL); 
   }
 
   xStart--;
