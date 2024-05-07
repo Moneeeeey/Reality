@@ -18,18 +18,25 @@ function setup() {
 }
 
 function draw() {
+
+  let kos = height - 55; 
   background('#C40C0C');
   textSize(fontSize);
   textSize(100);
   textFont(font);
   fill('#FFF600');
   textLeading(100);
+  textSize(15);
+  text("Don't Give up :)",width/2,kos);
+  textSize(100);
   text('Everything\n will', width/2,height/4.3)
   text('be Okay', width/2,height/2.1)
   
+
   for (let i = 0; i < wobblyTexts.length; i++) {
     wobblyTexts[i].draw();
   }
+
 }
 
 function addWobblyText(letter, x, y) {
