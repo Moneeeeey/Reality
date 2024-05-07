@@ -8,7 +8,7 @@ let content = "Reality is created by the mind anyways, Reality is created by the
 let FontUsed;
 
 function preload() {
-  FontUsed = loadFont("../Font/MonumentExtended-Regular.otf");
+  FontUsed = loadFont("Font/MonumentExtended-Regular.otf");
 }
 
 function setup() {

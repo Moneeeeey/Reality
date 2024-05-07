@@ -14,7 +14,7 @@ let x;
 
 
 function preload() {
-  font = loadFont("../Font/MonumentExtended-Regular.otf");
+  font = loadFont("Font/MonumentExtended-Regular.otf");
 }
 
 function setup() {

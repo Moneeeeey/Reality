@@ -11,9 +11,9 @@ let font;
 let fontthick;
 let fontreg;
 function preload(){
-  font = loadFont('../Font/monument-extended-2.otf');
-  fontthick = loadFont('../Font/MonumentExtended-Ultrabold.otf');
-  fontreg = loadFont('../Font/MonumentExtended-Regular.otf');
+  font = loadFont('Font/monument-extended-2.otf');
+  fontthick = loadFont('Font/MonumentExtended-Ultrabold.otf');
+  fontreg = loadFont('Font/MonumentExtended-Regular.otf');
 }
 
 function setup() {

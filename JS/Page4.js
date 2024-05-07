@@ -8,7 +8,7 @@ let font;
 let particles = [];
 let welcome = 'Thanks to'; 
 function preload(){
-  font = loadFont('../Font/MonumentExtended-Regular.otf');
+  font = loadFont('Font/MonumentExtended-Regular.otf');
 }
 
 function setup() {

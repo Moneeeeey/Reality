@@ -15,7 +15,7 @@ let x;
 
 
 function preload() {
-  font = loadFont('../Font/Jacquard24-Regular.ttf')
+  font = loadFont('Font/Jacquard24-Regular.ttf')
 }
 
 function setup() {

@@ -18,9 +18,9 @@ let arrowSize = 40;
 
 function preload(){
   
-  font = loadFont('../Font/HeptaSlab-ExtraBold.ttf');
-  font2 = loadFont('../Font/HeptaSlab-SemiBold.ttf');
-  arrow = loadImage('../IMG/Arrow.png');
+  font = loadFont('Font/HeptaSlab-ExtraBold.ttf');
+  font2 = loadFont('Font/HeptaSlab-SemiBold.ttf');
+  arrow = loadImage('IMG/Arrow.png');
 
   
 }

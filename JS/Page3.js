@@ -12,7 +12,7 @@ let x;
 let font;
 
 function preload(){
-  font = loadFont('../Font/MonumentExtended-Ultrabold.otf');
+  font = loadFont('Font/MonumentExtended-Ultrabold.otf');
 }
 
 function setup() {

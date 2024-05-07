@@ -7,7 +7,7 @@ let x;
 var Font;
 
 function preload(){
-  font = loadFont('../Font/HeptaSlab-ExtraBold.ttf');
+  font = loadFont('Font/HeptaSlab-ExtraBold.ttf');
 }
 
 function setup() {

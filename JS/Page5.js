@@ -19,8 +19,8 @@ let x;
 let font;
 
 function preload() {
-  Earthlayer = loadImage('../IMG/KONI.jpg');
-  font = loadFont("../Font/HeptaSlab-SemiBold.ttf");
+  Earthlayer = loadImage('IMG/KONI.jpg');
+  font = loadFont("Font/HeptaSlab-SemiBold.ttf");
 }
 
 function setup() {
