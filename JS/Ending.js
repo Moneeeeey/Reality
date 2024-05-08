@@ -70,7 +70,7 @@ function draw() {
   textSize(15);
   text("Don't Give up :)",width/2,kos);
   textSize(100);
-  text('Will', width/2,height/2.9)
+  text('Will', width/2,height/2.82)
   text('Everything\n\nBe Okay,', width/2,height/4.3)
   
 
