@@ -4,7 +4,7 @@ let colorA, colorB, colorC, colorD;
 let mix = 0;
 
 let yStart = 0;
-let content = "Reality is created by the mind anyways, Reality is created by the mind anyways, Reality is created by the mind anyways, ,";
+let content = "Reality is created by the mind anyways, Reality is created by the mind anyways, Reality is created by the mind anyways,";
 let FontUsed;
 
 function preload() {
