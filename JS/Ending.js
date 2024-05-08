@@ -3,8 +3,8 @@ let fontSize = 200;
 let wobblyTexts = [];
 let font 
 function preload() {
-  font = loadFont('../Font/HeptaSlab-SemiBold.ttf');
-  migae = loadFont('../Font/Helvetica-BoldOblique.ttf');
+  font = loadFont('Font/HeptaSlab-SemiBold.ttf');
+  migae = loadFont('Font/Helvetica-BoldOblique.ttf');
 }
 
 function setup() {
