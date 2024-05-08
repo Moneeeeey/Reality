@@ -22,7 +22,7 @@ function setup() {
   x = width+10;
   
   // Create particles for the text
-  let points = font.textToPoints('Think about it', width/5.5, height/2, 100, {
+  let points = font.textToPoints('Think about it', width/2 - textWidth('Think about it')/2, height/2 + 25, 50, {
     sampleFactor: 1
   });
   
