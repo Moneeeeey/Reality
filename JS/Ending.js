@@ -1,3 +1,12 @@
+var trail = [];
+var a = 0;
+var colorA, colorB;
+var mix = 0;
+let x;
+
+
+
+
 let migae;
 let fontSize = 200;
 let wobblyTexts = [];
@@ -15,12 +24,44 @@ function setup() {
   addWobblyText("O", width / 2.4 -  fontSize * 0.5, height / 1.4);
   addWobblyText("K", width / 2.2 , height / 1.4);
   addWobblyText("?", width / 2.1 + fontSize * 0.5, height / 1.4);
+  noCursor();
+  colorA = color("#FFF600");
+  colorB = color("#FFF600");
 }
 
 function draw() {
 
+
+
   let kos = height - 55; 
   background('#C40C0C');
+
+  stroke("#FFF600");
+  strokeWeight(20);
+  line(mouseX,mouseY,pmouseX,pmouseY);
+
+  strokeWeight(0);
+
+  let easedColorReversed = lerpColor(colorB, colorA, mix);
+  
+   strokeWeight(1);
+  
+
+  
+    trail.push([mouseX, mouseY]);
+  for(let i = 0; i < trail.length; i++) {
+  //fill('#3433E2');
+  noFill();
+  stroke(easedColorReversed, a);
+  ellipse(trail[i][0], trail[i][1], 30, 30);
+    if(a > 255) /* This value for the number of the number of cirlce */ {
+      trail.shift();
+      a = 0;
+    }
+    a += 15;
+  }
+
+  strokeWeight(0);
   textSize(fontSize);
   textSize(100);
   textFont(font);
