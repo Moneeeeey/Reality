@@ -30,7 +30,7 @@ function draw() {
   text("Don't Give up :)",width/2,kos);
   textSize(100);
   text('Everything\n will', width/2,height/4.3)
-  text('be Okay', width/2,height/2.1)
+  text('be Okay,', width/2,height/2.1)
   
 
   for (let i = 0; i < wobblyTexts.length; i++) {

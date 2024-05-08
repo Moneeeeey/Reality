@@ -48,6 +48,6 @@ h3:hover{
 
 #border-page canvas {
   margin: auto;
-  /* margin-top:50px; */
-  border: 50px blue solid;
+  position: fixed;
+  border: 50px white solid;
 }
