@@ -7,6 +7,7 @@ let textDistortion = 0;
 let font;
 let particles = [];
 let welcome = 'Thanks to'; 
+
 function preload(){
   font = loadFont('Font/MonumentExtended-Regular.otf');
 }
@@ -19,10 +20,15 @@ function setup() {
   colorA = color('#ffffff');
   colorB = color('#ffffff');
   
-  x = width+10;
+  // Calculate the position of the text dynamically based on canvas size
+  let textX = width / 4.3;
+  let textY = height / 2 + 25;
+  
+  // Dynamically adjust text size based on canvas size
+  let fontSize = min(width, height) * 0.1; // Adjust the multiplier as needed
   
   // Create particles for the text
-  let points = font.textToPoints('Think about it', width/2, height/2 + 25, 50, {
+  let points = font.textToPoints('Think about it...', textX, textY, fontSize, {
     sampleFactor: 1
   });
   
