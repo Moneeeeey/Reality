@@ -12,7 +12,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth-100, windowHeight-100);
+  createCanvas(windowWidth-200, windowHeight-200);
   noCursor();
   frameRate(70);
   textAlign(CENTER, CENTER);

@@ -75,7 +75,6 @@ strokeWeight(2);
   
     trail.push([mouseX, mouseY]);
   for(let i = 0; i < trail.length; i++) {
-  //fill('#3433E2');
   noFill();
   stroke(easedColorReversed, a);
   ellipse(trail[i][0], trail[i][1], 30, 30);
